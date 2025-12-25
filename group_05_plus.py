@@ -21,7 +21,7 @@ import cv2
 image = Image.open("聖誕快樂.png")
 
 text = pytesseract.image_to_string(image, lang='eng+chi_tra', config='--psm 6')
-#中英夾雜，且因文字兩行config那裏要改成6
+#中英夾雜將lang改成chi_tra+eng，且因文字兩行config那裏要改成6
 
 print("OCR 辨識結果:")
 print("-" * 40)
