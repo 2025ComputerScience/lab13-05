@@ -21,6 +21,7 @@ import cv2
 image = Image.open("組別英文.png")
 
 text = pytesseract.image_to_string(image, lang='eng', config='--psm 10')
+#將lang從chi_tra改成eng就可以辨識英文了
 
 print("OCR 辨識結果:")
 print("-" * 40)
